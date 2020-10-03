@@ -3,7 +3,7 @@
 This is the source code for Text Cook web application, by Team Cook, for codeBOSS 2020 competition.
 
 ## Google API credentials
-The API is removed. Please add your API under `src/service/index.js`
+!! The API is removed. Please add your API under `src/service/index.js`
 
 ## Project setup
 ```

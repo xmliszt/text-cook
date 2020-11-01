@@ -12,9 +12,11 @@ cd dist
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 
+COMMIT_MSG=$1
+
 git init
 git add -A
-git commit -m 'feat: web app version 1.0.0 first deployment'
+git commit -m "$COMMIT_MSG"
 
 git push -f https://github.com/xmliszt/text-cook.git master:gh-pages
 

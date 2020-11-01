@@ -19,6 +19,9 @@ export default {
 <style>
 textarea,
 .el-loading-text,
+.el-message,
+.el-notification,
+.el-tooltip__popper,
 .el-select-dropdown {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }

@@ -125,6 +125,7 @@ export default {
         }
       } else {
         this.loading = false;
+        console.error(result.error);
         this.$message.error(result.error);
       }
     }

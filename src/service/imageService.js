@@ -35,10 +35,9 @@ export async function call_detect_image(base64_encoded_img) {
       };
     }
   } catch (err) {
-    console.log(err);
     return {
       success: false,
-      error: err.response.data.responses[0].error.message
+      error: err.response
     };
   }
 }

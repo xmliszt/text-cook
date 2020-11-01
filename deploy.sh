@@ -16,10 +16,6 @@ git init
 git add -A
 git commit -m 'feat: web app version 1.0.0 first deployment'
 
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
 git push -f https://github.com/xmliszt/text-cook.git master:gh-pages
 
 cd -

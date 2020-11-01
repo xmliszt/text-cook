@@ -8,10 +8,9 @@ export async function call_detect_audio(base64_encoded_audio) {
       "https://speech.googleapis.com/v1/speech:recognize?key=" + KEY,
       {
         config: {
-          encoding: "LINEAR16",
+          encoding: "FLAC",
           languageCode: "en-US",
-          enableWordTimeOffsets: false,
-          audio_channel_count: 2
+          enableWordTimeOffsets: false
         },
         audio: {
           content: base64_encoded_audio
@@ -31,10 +30,9 @@ export async function call_detect_audio(base64_encoded_audio) {
       };
     }
   } catch (err) {
-    console.log(err.response);
     return {
       success: false,
-      error: err.response.data.responses[0].error.message
+      error: err.response
     };
   }
 }
